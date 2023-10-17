@@ -1,0 +1,31 @@
+﻿using System;
+namespace program
+{
+    class designation
+    {
+        public static void Main(string[]args)
+        {
+            string designation;
+            int bonus = 0;
+                Console.WriteLine("enter designation manager,clerk.or peon");
+            designation = Console.ReadLine();
+            switch (designation)
+            {
+                    case "manager":
+                    bonus = 10000;
+                        break;
+                case "clerk":
+                      bonus = 2000;
+                        break;
+                case "peon":
+                    bonus = 2000;
+                    break;
+                default:
+                    Console.WriteLine("invalid designation");
+                    break;
+            }
+            Console.WriteLine("bonus={0}", bonus);
+                Console.ReadKey();
+        }
+    }
+}
