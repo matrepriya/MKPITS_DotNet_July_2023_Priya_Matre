@@ -1,9 +1,10 @@
 ﻿using System;
+
 namespace program
 {
-    class program
+    internal class program
     {
-        static void Main(string[]args)
+        static void Main(string[] args)
         {
             customer cust = new customer();
             cust.customer_code = 123;
@@ -11,10 +12,11 @@ namespace program
             Console.WriteLine("customer code" + cust.customer_code);
             Console.WriteLine(" customer name" + cust.customer_name);
         }
-        class customer
+
+        private class customer
         {
-          public  int customer_code;
-          public  string customer_name;
+            public int customer_code;
+            public string customer_name;
         }
     }
 }
