@@ -1,0 +1,2 @@
+﻿using System;using System.Threading.Tasks;namespace ConsoleApp8{    class Program    {        static void Main(string[] args)        {            int num = 10;            int n = 0;            int res = num / n; //error will come here and program terminates
+            Console.WriteLine("res = " + res);            Console.WriteLine("bye");        }    }}
